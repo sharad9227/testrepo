@@ -1,15 +1,21 @@
 package com.example.demo.entities;
 
+import org.eclipse.persistence.jpa.jpql.parser.DateTime;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
-@Table(name = "User", schema = "dbo", catalog = "master")
+@Table(name = "User", uniqueConstraints = {
+        @UniqueConstraint(columnNames = "user_id"),
+        @UniqueConstraint(columnNames = "email")},schema = "dbo", catalog = "master")
 public class UserEntity {
 
     private String email;
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int userId;
     private String userFirstName;
     private String userLastName;
@@ -19,10 +25,10 @@ public class UserEntity {
     private String oauthToken;
     private String sessionWebtoken;
     private boolean activeStatus;
-    private Timestamp createdTimestamp;
-    private Timestamp updatedTime;
+    private LocalDateTime createdTimestamp;
+    private LocalDateTime updatedTime;
     private boolean approvedStatus;
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "parkingOwnerUser")
+    @OneToMany(cascade = {CascadeType.ALL},fetch = FetchType.EAGER ,mappedBy = "parkingOwnerUser")
     private Set<ParkingSpotsEntity> parkingSlots;
 
 
@@ -36,8 +42,7 @@ public class UserEntity {
         this.email = email;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
     @Column(name = "user_id", nullable = false)
     public int getUserId() {
         return userId;
@@ -141,23 +146,25 @@ public class UserEntity {
     public void setApprovedStatus(boolean approvedStatus) {
         this.approvedStatus = approvedStatus;
     }
-    @Basic
+
+
+
+
     @Column(name = "CREATED_TIMESTAMP", nullable = false)
-    public Timestamp getCreatedTimestamp() {
+    public LocalDateTime getCreatedTimestamp() {
         return createdTimestamp;
     }
 
-    public void setCreatedTimestamp(Timestamp createdTimestamp) {
+    public void setCreatedTimestamp(LocalDateTime createdTimestamp) {
         this.createdTimestamp = createdTimestamp;
     }
 
-    @Basic
     @Column(name = "UPDATED_TIME", nullable = false)
-    public Timestamp getUpdatedTime() {
+    public LocalDateTime getUpdatedTime() {
         return updatedTime;
     }
 
-    public void setUpdatedTime(Timestamp updatedTime) {
+    public void setUpdatedTime(LocalDateTime updatedTime) {
         this.updatedTime = updatedTime;
     }
 
@@ -166,7 +173,7 @@ public class UserEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UserEntity that = (UserEntity) o;
+           UserEntity that = (UserEntity) o;
 
         if (userId != that.userId) return false;
         if (activeStatus != that.activeStatus) return false;

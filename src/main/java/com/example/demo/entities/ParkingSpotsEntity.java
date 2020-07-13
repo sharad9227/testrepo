@@ -15,7 +15,7 @@ public class ParkingSpotsEntity {
     private Integer vacantSpots;
     private Timestamp createdTimestamp;
     private Timestamp updatedTime;
-    private Object geoLocation;
+
 
     public int getParking_user_id() {
         return parking_user_id;
@@ -112,15 +112,7 @@ public class ParkingSpotsEntity {
         this.updatedTime = updatedTime;
     }
 
-    @Basic
-    @Column(name = "GeoLocation", nullable = true)
-    public Object getGeoLocation() {
-        return geoLocation;
-    }
 
-    public void setGeoLocation(Object geoLocation) {
-        this.geoLocation = geoLocation;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -138,7 +130,6 @@ public class ParkingSpotsEntity {
         if (createdTimestamp != null ? !createdTimestamp.equals(that.createdTimestamp) : that.createdTimestamp != null)
             return false;
         if (updatedTime != null ? !updatedTime.equals(that.updatedTime) : that.updatedTime != null) return false;
-        if (geoLocation != null ? !geoLocation.equals(that.geoLocation) : that.geoLocation != null) return false;
 
         return true;
     }
@@ -153,7 +144,7 @@ public class ParkingSpotsEntity {
         result = 31 * result + (vacantSpots != null ? vacantSpots.hashCode() : 0);
         result = 31 * result + (createdTimestamp != null ? createdTimestamp.hashCode() : 0);
         result = 31 * result + (updatedTime != null ? updatedTime.hashCode() : 0);
-        result = 31 * result + (geoLocation != null ? geoLocation.hashCode() : 0);
+
         return result;
     }
 }

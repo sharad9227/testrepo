@@ -6,14 +6,11 @@ import com.example.demo.entities.UserEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface UserDaoInterface {
 
 
     String registerUser(UserEntity userReg);
-
-
-
     UserBean loginUser(UserEntity userDetails);
     public List<UserEntity> getUserEmails();
 

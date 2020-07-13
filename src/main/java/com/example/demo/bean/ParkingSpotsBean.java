@@ -1,8 +1,9 @@
 package com.example.demo.bean;
 
+import org.springframework.context.annotation.Bean;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-
 public class ParkingSpotsBean {
     private int id;
     private String name;

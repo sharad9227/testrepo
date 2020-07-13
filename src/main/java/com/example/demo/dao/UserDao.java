@@ -24,33 +24,30 @@ public class UserDao implements UserDaoInterface {
     public static final Logger logger = LoggerFactory.getLogger(UserDao.class);
 
 
-
-
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("persistence");
     @Override
     public String registerUser(UserEntity user) {
 
         String result = "false";
         try {
-            Session session = HibernateUtil.getSessionFactory().openSession();
-            session.beginTransaction();
-            Serializable id = session.save(user);
+         //   Session session = HibernateUtil.getSessionFactory().openSession();
+          //  session.beginTransaction();
+         //   long id =(Long) session.save(user);
+            EntityManager em = entityManagerFactory.createEntityManager();
+//
+            em.getTransaction().begin();
+            em.persist(user);
+            em.getTransaction().commit();
+            em.close();
 
-
-            if (id != null) {
-                logger.info("not null saved id=" + id);
-                result = "true";
-            }
-
-
-            session.getTransaction().commit();
+         //   session.getTransaction().commit();
         } catch (Exception exception) {
             //need to implement logic for duplicate registration
             System.out.println(exception);
             result = exception.getMessage();
         }
 
-        HibernateUtil.closeSessionFactory();
+     //   HibernateUtil.shutdown();
 
         return result;
 
@@ -162,6 +159,7 @@ public class UserDao implements UserDaoInterface {
             em.close();
 
         } catch (Exception ex) {
+
             System.out.println(ex.getMessage());
             user.setException(ex);
         } finally {

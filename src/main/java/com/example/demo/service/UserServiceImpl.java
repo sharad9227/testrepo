@@ -6,10 +6,14 @@ import com.example.demo.dao.UserDao;
 import com.example.demo.dao.UserDaoInterface;
 import com.example.demo.entities.ParkingSpotsEntity;
 import com.example.demo.entities.UserEntity;
+import org.eclipse.persistence.jpa.jpql.parser.DateTime;
+import org.joda.time.format.DateTimeFormatter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
+
 
 @Service
 public class UserServiceImpl implements UserServiceInterface{
@@ -21,17 +25,27 @@ public class UserServiceImpl implements UserServiceInterface{
     public String registerUser(UserBean userDetails) {
 
         UserEntity user =new UserEntity();
+        user.setUserId(1);
         user.setUserFirstName(userDetails.getUserFirstName());
         user.setUserLastName(userDetails.getUserLastName());
         user.setEmail(userDetails.getEmail());
         user.setPassword(userDetails.getPassword());
         user.setPlateNumber(userDetails.getPlateNumber());
         user.setUserType(userDetails.getUserType());
-        user.setPlateNumber(userDetails.getPlateNumber());
+        user.setOauthToken("Ddddss123");
+        user.setSessionWebtoken("3aassww23334");
+        LocalDateTime dateTime = LocalDateTime.now();
+       // System.out.println(dateTime.format(formatter));
+        user.setUpdatedTime(dateTime);
+        user.setActiveStatus(true);
+        user.setCreatedTimestamp(dateTime);
+        //Zuser.setPlateNumber(userDetails.getPlateNumber());
         // site admin to check later on
         if(userDetails.getUserType().equals("Parking Owner")) {
             user.setApprovedStatus(false);
         }
+        else
+            user.setApprovedStatus(true);
         //user.setUpdatedTime(S);
       //  UserEntity.setFullName(userDetails.getFullName());
 

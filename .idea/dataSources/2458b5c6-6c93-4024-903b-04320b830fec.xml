@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.17">
+    <root id="1">
+      <ServerVersion>14.0.3048</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Current>1</Current>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@fe0f92a6692c</Fingerprint>
+    </database>
+    <database id="3" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <schema id="6" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2020-07-13.15:11:34.370</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="17" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="19" parent="16" name="Booking">
+      <ObjectId>244195920</ObjectId>
+      <CreatedTimestamp>2020-07-08.21:59:57.723</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.21:59:57.723</ModifiedTimestamp>
+    </table>
+    <table id="20" parent="16" name="MSreplication_options">
+      <ObjectId>2107154552</ObjectId>
+      <CreatedTimestamp>2018-11-30.15:05:09.220</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.533</ModifiedTimestamp>
+    </table>
+    <table id="21" parent="16" name="ParkingSpots">
+      <ObjectId>100195407</ObjectId>
+      <CreatedTimestamp>2020-07-08.21:33:02.183</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-12.11:12:03.117</ModifiedTimestamp>
+    </table>
+    <table id="22" parent="16" name="Student">
+      <ObjectId>1175675236</ObjectId>
+      <CreatedTimestamp>2020-01-31.15:53:14.120</CreatedTimestamp>
+      <ModifiedTimestamp>2020-01-31.15:53:14.120</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="16" name="StudentRegistration">
+      <ObjectId>1239675464</ObjectId>
+      <CreatedTimestamp>2020-05-24.22:36:25.843</CreatedTimestamp>
+      <ModifiedTimestamp>2020-05-24.22:36:25.900</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="16" name="User">
+      <ObjectId>1879677744</ObjectId>
+      <CreatedTimestamp>2020-07-08.00:00:02.373</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-13.15:11:33.647</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="16" name="spt_fallback_db">
+      <ObjectId>117575457</ObjectId>
+      <CreatedTimestamp>2003-04-08.10:18:01.557</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.520</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="16" name="spt_fallback_dev">
+      <ObjectId>133575514</ObjectId>
+      <CreatedTimestamp>2003-04-08.10:18:02.870</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.523</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="16" name="spt_fallback_usg">
+      <ObjectId>149575571</ObjectId>
+      <CreatedTimestamp>2003-04-08.10:18:04.180</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.527</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="16" name="spt_monitor">
+      <ObjectId>1803153469</ObjectId>
+      <CreatedTimestamp>2018-11-30.15:04:02.047</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.533</ModifiedTimestamp>
+    </table>
+    <view id="29" parent="16" name="spt_values">
+      <ObjectId>1787153412</ObjectId>
+      <SourceTextLength>161</SourceTextLength>
+      <CreatedTimestamp>2018-11-30.15:04:02.023</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:04:02.047</ModifiedTimestamp>
+    </view>
+    <routine id="30" parent="16" name="sp_MScleanupmergepublisher">
+      <ObjectId>2139154666</ObjectId>
+      <SourceTextLength>100</SourceTextLength>
+      <CreatedTimestamp>2018-11-30.15:05:09.270</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.540</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="31" parent="16" name="sp_MSrepl_startup">
+      <ObjectId>2123154609</ObjectId>
+      <SourceTextLength>83</SourceTextLength>
+      <CreatedTimestamp>2018-11-30.15:05:09.257</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-30.15:06:04.537</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="32" parent="19" name="booking_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="19" name="spot_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="19" name="driver_id">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="19" name="duration">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="19" name="parking_fee">
+      <Position>5</Position>
+      <DefaultConstraintName>DF__Booking__parking__125EB334</DefaultConstraintName>
+      <DefaultExpression>10.0</DefaultExpression>
+      <DataType>decimal(7,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="19" name="active_status">
+      <Position>6</Position>
+      <DefaultConstraintName>DF__Booking__active___1352D76D</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="19" name="start_time">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="19" name="end_time">
+      <Position>8</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="19" name="latest_updated">
+      <Position>9</Position>
+      <Computed>1</Computed>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="41" parent="19" name="PK__Booking__5DE3A5B157403726">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>booking_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="19" name="PK__Booking__5DE3A5B157403726">
+      <ObjectId>260195977</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.21:59:57.730</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.21:59:57.730</ModifiedTimestamp>
+      <ColNames>booking_id</ColNames>
+      <UnderlyingIndexName>PK__Booking__5DE3A5B157403726</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="43" parent="19" name="FK__Booking__spot_id__10766AC2">
+      <ObjectId>276196034</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.21:59:57.730</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.21:59:57.730</ModifiedTimestamp>
+      <ColNames>spot_id</ColNames>
+      <RefTableId>100195407</RefTableId>
+      <RefTableName>ParkingSpots</RefTableName>
+      <RefKeyName>PK__ParkingS__3213E83F3F546EEE</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="44" parent="19" name="FK__Booking__driver___116A8EFB">
+      <ObjectId>292196091</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.21:59:57.730</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.21:59:57.730</ModifiedTimestamp>
+      <ColNames>driver_id</ColNames>
+      <RefTableId>1879677744</RefTableId>
+      <RefTableName>User</RefTableName>
+      <RefKeyName>PK__User__B9BE370F6D0F5FED</RefKeyName>
+      <RefColNames>user_id</RefColNames>
+    </foreign-key>
+    <default id="45" parent="19" name="DF__Booking__parking__125EB334">
+      <ObjectId>308196148</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-07-08.21:59:57.733</ModifiedTimestamp>
+      <ColNames>parking_fee</ColNames>
+      <DefaultExpression>10.0</DefaultExpression>
+    </default>
+    <default id="46" parent="19" name="DF__Booking__active___1352D76D">
+      <ObjectId>324196205</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-07-08.21:59:57.733</ModifiedTimestamp>
+      <ColNames>active_status</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <column id="47" parent="20" name="optname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="20" name="value">
+      <Position>2</Position>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="20" name="major_version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="20" name="minor_version">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="20" name="revision">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="20" name="install_failures">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="21" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="21" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="55" parent="21" name="parking_user_id">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="56" parent="21" name="latitude">
+      <Position>4</Position>
+      <DataType>decimal(9,6)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="21" name="Longitude">
+      <Position>5</Position>
+      <DataType>decimal(9,6)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="21" name="active_status">
+      <Position>6</Position>
+      <DefaultConstraintName>DF__ParkingSp__activ__08D548FA</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="21" name="vacant_spots">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="60" parent="21" name="CREATED_TIMESTAMP">
+      <Position>8</Position>
+      <DefaultConstraintName>DF__ParkingSp__CREAT__09C96D33</DefaultConstraintName>
+      <DefaultExpression>getdate()</DefaultExpression>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="21" name="UPDATED_TIME">
+      <Position>9</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="62" parent="21" name="PK__ParkingS__3213E83F3F546EEE">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="21" name="PK__ParkingS__3213E83F3F546EEE">
+      <ObjectId>116195464</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.21:33:02.187</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.21:33:02.187</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__ParkingS__3213E83F3F546EEE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="21" name="FK__ParkingSp__parki__07E124C1">
+      <ObjectId>132195521</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.21:33:02.187</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.21:33:02.187</ModifiedTimestamp>
+      <ColNames>parking_user_id</ColNames>
+      <RefTableId>1879677744</RefTableId>
+      <RefTableName>User</RefTableName>
+      <RefKeyName>PK__User__B9BE370F6D0F5FED</RefKeyName>
+      <RefColNames>user_id</RefColNames>
+    </foreign-key>
+    <default id="65" parent="21" name="DF__ParkingSp__activ__08D548FA">
+      <ObjectId>148195578</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-07-08.21:33:02.190</ModifiedTimestamp>
+      <ColNames>active_status</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="66" parent="21" name="DF__ParkingSp__CREAT__09C96D33">
+      <ObjectId>164195635</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-07-08.21:33:02.190</ModifiedTimestamp>
+      <ColNames>CREATED_TIMESTAMP</ColNames>
+      <DefaultExpression>getdate()</DefaultExpression>
+    </default>
+    <column id="67" parent="22" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="22" name="Address">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="69" parent="22" name="ContactNumber">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="70" parent="22" name="email_id">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="71" parent="22" name="FirstName">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="72" parent="22" name="LastName">
+      <Position>6</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="73" parent="22" name="PK__Student__3213E83F92236F46">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="74" parent="22" name="PK__Student__3213E83F92236F46">
+      <ObjectId>1191675293</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-01-31.15:53:14.123</CreatedTimestamp>
+      <ModifiedTimestamp>2020-01-31.15:53:14.123</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Student__3213E83F92236F46</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="23" name="email_id">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="77" parent="23" name="FullName">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="78" parent="23" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="79" parent="23" name="PK__StudentR__3213E83F05F3E3E6">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="80" parent="23" name="PK__StudentR__3213E83F05F3E3E6">
+      <ObjectId>1255675521</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-05-24.22:36:25.900</CreatedTimestamp>
+      <ModifiedTimestamp>2020-05-24.22:36:25.900</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__StudentR__3213E83F05F3E3E6</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="81" parent="24" name="user_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="24" name="user_firstname">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="83" parent="24" name="user_lastname">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="84" parent="24" name="user_type">
+      <Position>4</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="24" name="email">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="24" name="password">
+      <Position>6</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="24" name="plate_number">
+      <Position>7</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="24" name="oauth_token">
+      <Position>8</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="24" name="session_webtoken">
+      <Position>9</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="24" name="active_status">
+      <Position>10</Position>
+      <DefaultConstraintName>DF__User__active_sta__72E607DB</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="24" name="CREATED_TIMESTAMP">
+      <Position>11</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="92" parent="24" name="UPDATED_TIME">
+      <Position>12</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="24" name="approved_status">
+      <Position>13</Position>
+      <DefaultConstraintName>DF__User__approved_s__2942188C</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="94" parent="24" name="PK__User__B9BE370F6D0F5FED">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="95" parent="24" name="email_unique">
+      <Position>2</Position>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="96" parent="24" name="PK__User__B9BE370F6D0F5FED">
+      <ObjectId>1895677801</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.00:00:02.400</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.00:00:02.400</ModifiedTimestamp>
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>PK__User__B9BE370F6D0F5FED</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="97" parent="24" name="email_unique">
+      <ObjectId>372196376</ObjectId>
+      <CreatedTimestamp>2020-07-09.10:52:39.687</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-09.10:52:39.687</ModifiedTimestamp>
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>email_unique</UnderlyingIndexName>
+    </key>
+    <check id="98" parent="24" name="CK__User__user_type__71F1E3A2">
+      <ObjectId>1911677858</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-07-08.00:00:02.400</CreatedTimestamp>
+      <ModifiedTimestamp>2020-07-08.00:00:02.400</ModifiedTimestamp>
+      <ColNames>user_type</ColNames>
+      <Predicate>[user_type]=&apos;SiteAdmin&apos; OR [user_type]=&apos;ParkingOwner&apos; OR [user_type]=&apos;Driver&apos;</Predicate>
+    </check>
+    <default id="99" parent="24" name="DF__User__active_sta__72E607DB">
+      <ObjectId>1927677915</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-07-08.00:00:02.403</ModifiedTimestamp>
+      <ColNames>active_status</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <default id="100" parent="24" name="DF__User__approved_s__2942188C">
+      <ObjectId>692197516</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-07-09.22:00:16.187</ModifiedTimestamp>
+      <ColNames>approved_status</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <column id="101" parent="25" name="xserver_name">
+      <Position>1</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="25" name="xdttm_ins">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="103" parent="25" name="xdttm_last_ins_upd">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="25" name="xfallback_dbid">
+      <Position>4</Position>
+      <DataType>smallint|0s</DataType>
+    </column>
+    <column id="105" parent="25" name="name">
+      <Position>5</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="25" name="dbid">
+      <Position>6</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="107" parent="25" name="status">
+      <Position>7</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="25" name="version">
+      <Position>8</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="26" name="xserver_name">
+      <Position>1</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="26" name="xdttm_ins">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="26" name="xdttm_last_ins_upd">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="26" name="xfallback_low">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="113" parent="26" name="xfallback_drive">
+      <Position>5</Position>
+      <DataType>char(2 char)|0s</DataType>
+    </column>
+    <column id="114" parent="26" name="low">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="26" name="high">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="26" name="status">
+      <Position>8</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="26" name="name">
+      <Position>9</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="26" name="phyname">
+      <Position>10</Position>
+      <DataType>varchar(127 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="27" name="xserver_name">
+      <Position>1</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="27" name="xdttm_ins">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="27" name="xdttm_last_ins_upd">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="122" parent="27" name="xfallback_vstart">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="123" parent="27" name="dbid">
+      <Position>5</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="27" name="segmap">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="27" name="lstart">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="27" name="sizepg">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="127" parent="27" name="vstart">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="128" parent="28" name="lastrun">
+      <Position>1</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="28" name="cpu_busy">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="28" name="io_busy">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="28" name="idle">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="28" name="pack_received">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="133" parent="28" name="pack_sent">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="28" name="connections">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="135" parent="28" name="pack_errors">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="136" parent="28" name="total_read">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="28" name="total_write">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="28" name="total_errors">
+      <Position>11</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="139" parent="29" name="name">
+      <Position>1</Position>
+      <DataType>nvarchar(35 char)|0s</DataType>
+    </column>
+    <column id="140" parent="29" name="number">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="141" parent="29" name="type">
+      <Position>3</Position>
+      <DataType>nchar(3 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="142" parent="29" name="low">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="143" parent="29" name="high">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="144" parent="29" name="status">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>
